@@ -11,11 +11,6 @@ const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, editTodo, text }) => 
       <div className={style.todoText} onDoubleClick={() => editTodo(todo.text)}>
         {todo.text}
       </div>
-      <FaCheck
-        className={style.togleIcon}
-        onClick={() => togleTodoHandler(todo.id)}
-        title="виконати"
-      />
       <RiDeleteBin2Line
         className={`${style.togleIcon} ${
           !todo.isCompleted ? style.hideIcon : ''
@@ -23,6 +18,12 @@ const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, editTodo, text }) => 
         onClick={() => deleteTodoHandler(todo.id)}
         title="видалити"
       />
+      <FaCheck
+        className={style.togleIcon}
+        onClick={() => togleTodoHandler(todo.id)}
+        title="виконати"
+      />
+      
     </div>
   )
 }

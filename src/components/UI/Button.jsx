@@ -1,7 +1,24 @@
+import { RiDeleteBinFill, RiCheckDoubleFill } from 'react-icons/ri'
+import style from './Button.module.css'
 
-const Button = () => {
+const Button = ({ clearTodosList, completeAllTodos }) => {
   return (
-    <div>Button</div>
+    <div>
+      {
+        <>
+          <RiDeleteBinFill
+            className={style.actionButton}
+            onClick={() => clearTodosList()}
+            title="Видалити всі задачі"
+          />
+          <RiCheckDoubleFill
+            className={style.actionButton}
+            title="Виконати всі"
+            onClick={() => completeAllTodos()}
+          />
+        </>
+      }
+    </div>
   )
 }
 

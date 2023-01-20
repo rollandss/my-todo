@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { RiDeleteBinFill, RiCheckDoubleFill } from 'react-icons/ri'
 
 import TodoForm from './components/Todos/TodoForm'
 import TodoList from './components/Todos/TodoList'
 import './App.css'
+import Button from './components/UI/Button'
 
 function App() {
   const [todos, setTodos] = useState([])
- 
+
   const addTodoHandler = (text) => {
     const newTodo = {
       text: text,
@@ -33,7 +33,7 @@ function App() {
   }
 
   const clearTodosList = () => {
-    setTodos([])
+    setTodos(todos.filter((todo)=>!todo.isCompleted))
   }
 
   const completeAllTodos = () => {
@@ -42,26 +42,16 @@ function App() {
     )
   }
 
-
-
   return (
     <div className="App">
       <h1>Список задач</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <div>
-        {!!todos.length && (
-          <>
-            <RiDeleteBinFill
-              onClick={clearTodosList}
-              title="Видалити всі задачі"
-            />
-            <RiCheckDoubleFill
-              title="Виконати всі"
-              onClick={completeAllTodos}
-            />
-          </>
-        )}
-      </div>
+      {!!todos.length && (
+        <Button
+          clearTodosList={clearTodosList}
+          completeAllTodos={completeAllTodos}
+        />
+      )}
 
       <TodoList
         todos={todos}
