@@ -17,8 +17,8 @@ const TodoForm = ({ addTodo }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button type="submit" title="submit">
-      Додати
+      <button type="submit" title="додати задачу">
+     + 
       </button>
     </form>
   )

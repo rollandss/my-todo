@@ -1,8 +1,9 @@
 import Todo from './Todo'
+import style from './TodoList.module.css'
 
 const TodoList = ({ todos, deleteTodoHandler, togleTodoHandler, editTodo, text }) => {
   return (
-    <div>
+    <div className={style.todoList} >
       {!todos.length && <h2>Додай задачу</h2>}
       {todos.map((todo) => (
         <Todo
