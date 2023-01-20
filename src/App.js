@@ -15,7 +15,7 @@ function App() {
       isCompleted: false,
       id: uuidv4(),
     }
-    setTodos([...todos, newTodo])
+    text.length ? setTodos([...todos, newTodo]) : setTodos([...todos])
   }
 
   const deleteTodoHandler = (id) => {
@@ -33,7 +33,7 @@ function App() {
   }
 
   const clearTodosList = () => {
-    setTodos(todos.filter((todo)=>!todo.isCompleted))
+    setTodos(todos.filter((todo) => !todo.isCompleted))
   }
 
   const completeAllTodos = () => {
