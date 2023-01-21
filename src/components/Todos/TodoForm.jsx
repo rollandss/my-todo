@@ -10,11 +10,11 @@ const TodoForm = ({ addTodo }) => {
     addTodo(text)
     setText('')
   }
-  let color = randomColor()
+let color=randomColor()
   return (
     <form className={style.todoFormContainer} onSubmit={onSubmitHandler}>
       <input
-        style={{ backgroundColor: color }}
+      style={{ backgroundColor: color }}
         placeholder="тицяй сюди"
         value={text}
         onChange={(e) => setText(e.target.value)}
