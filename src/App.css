@@ -5,10 +5,9 @@
   background-color: #282828;
   padding: 30px;
   margin-top: 40px;
-  
   border-radius: 10px;
-  /* text-shadow: gray 0px 2px 5px ; */
-  /* box-shadow: gray 0px 5px 5px; */
+  text-shadow: gray 0px 2px 5px ;
+  box-shadow: gray 0px 5px 5px;
  
 }
 
@@ -17,7 +16,7 @@ h1 {
   font-size: 2.2rem;
   margin-bottom: 40px;
   margin: top 24px;
-  color: azure;
+  color:white;
 }
 ::selection{
   background: #ff4500;

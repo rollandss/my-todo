@@ -1,11 +1,20 @@
 import style from './Todo.module.css'
 import { RiDeleteBin2Line } from 'react-icons/ri'
 import { FaCheck } from 'react-icons/fa'
-//, RiTodoFill
+import randomColor from 'randomcolor'
 
-const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, editTodo, text }) => {
+const Todo = ({
+  todo,
+  deleteTodoHandler,
+  togleTodoHandler,
+  editTodo,
+  text,
+}) => {
+  var color = randomColor()
+  console.log(color)
   return (
     <div
+      style={{ backgroundColor: color }}
       className={`${style.todo} ${todo.isCompleted ? style.completedTodo : ''}`}
     >
       <div className={style.todoText} onDoubleClick={() => editTodo(todo.text)}>
@@ -23,7 +32,6 @@ const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, editTodo, text }) => 
         onClick={() => togleTodoHandler(todo.id)}
         title="виконати"
       />
-      
     </div>
   )
 }

@@ -1,28 +1,40 @@
 .todoFormContainer {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .todoFormContainer input {
   height: 1.3em;
   border-radius: 5px;
-  margin-right: 1em;
+  border: none;
   font-size: 1.5rem;
   outline: none;
+  background-color: #282828;
+  caret-color: #282828 ;
+}
+
+.todoFormContainer input:hover {
+  background-color: white;
+  box-shadow: gray 0px 3px 3px;
+  height: 1.3em;
 }
 
 input::placeholder {
   font-size: 1.2rem;
   text-align: center;
+  color: white;
 }
 
 button {
-  /* height: 3em; */
+  text-shadow: gray 0px 2px 5px;
+  /* padding: 8px; */
+  margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.3rem;
-  padding: 4px;
-  text-align: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  font-weight: 900;
-  margin-top: 5px;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: gray 0px 3px 3px;
+}
+.buttonHidden {
+  visibility: hidden;
 }
