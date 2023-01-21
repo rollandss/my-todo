@@ -2,14 +2,11 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  margin: 15px 0;
+  margin: 15px ;
   font-size: 1.5rem;
   border-radius: 5px;
-  /* border: 2px solid #555; */
   color: #112d49;
-  /* background-color: #fbfef9; */
   box-shadow: gray 0px 3px 3px;
-
 }
 
 .todoText {
@@ -20,8 +17,8 @@
 .completedTodo {
   background: #555;
   box-shadow: none;
-  text-shadow: none ;
-opacity: 10%;
+  text-shadow: none;
+  opacity: 10%;
 }
 
 .togleIcon,

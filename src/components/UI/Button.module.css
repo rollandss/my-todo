@@ -1,6 +1,11 @@
-.actionButton{
-    margin: 8px;
-    font-size: 1.5em;
-    cursor: pointer;
-   
+.actionButton {
+  margin: 8px;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 0px auto;
+}
+
+.buttonContainer {
+  padding-right: 31px;
+  text-align: right;
 }

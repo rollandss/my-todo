@@ -5,7 +5,7 @@ const Button = ({ clearTodosList, completeAllTodos }) => {
   return (
     <div>
       {
-        <>
+        <div className={style.buttonContainer}>
           <RiDeleteBinFill
             className={style.actionButton}
             onClick={() => clearTodosList()}
@@ -16,7 +16,7 @@ const Button = ({ clearTodosList, completeAllTodos }) => {
             title="Виконати всі"
             onClick={() => completeAllTodos()}
           />
-        </>
+        </div>
       }
     </div>
   )
