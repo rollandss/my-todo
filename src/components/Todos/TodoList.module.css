@@ -1,3 +1,18 @@
 .todoList {
   transition-duration: 2s;
 }
+
+.todo-enter {
+  opacity: 0;
+}
+.todo-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.todo-exit {
+  opacity: 1;
+}
+.todo-exit-active {
+  opacity: 0;
+  transition: opacity 2ms;
+}

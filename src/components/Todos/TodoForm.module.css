@@ -2,12 +2,11 @@
   margin-bottom: 30px;
 }
 .todoFormContainer input {
-  /* height: 3em; */
+  height: 1.3em;
   border-radius: 5px;
   margin-right: 1em;
   font-size: 1.5rem;
-  outline:none;
-  
+  outline: none;
 }
 
 input::placeholder {
@@ -25,4 +24,5 @@ button {
   padding-left: 12px;
   padding-right: 12px;
   font-weight: 900;
+  margin-top: 5px;
 }
