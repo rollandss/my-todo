@@ -38,9 +38,7 @@ function App() {
   }
 
   const completeAllTodos = () => {
-    setTodos(
-      todos.map((todo) => (!0 ? { ...todo, isCompleted: true } : { ...todo }))
-    )
+    setTodos(todos.map((todo) => ({ ...todo, isCompleted: true })))
   }
 
   return (
