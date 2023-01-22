@@ -1,9 +1,11 @@
 import { RiDeleteBin2Line } from 'react-icons/ri'
 import { FaCheck } from 'react-icons/fa'
 
+
 import style from './Todo.module.css'
 
 const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, color }) => {
+
   return (
     <div
       style={{ backgroundColor: color }}
