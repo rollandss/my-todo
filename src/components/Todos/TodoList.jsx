@@ -1,4 +1,6 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import randomColor from 'randomcolor'
+
 import Todo from './Todo'
 import style from './TodoList.module.css'
 import './styles.css'
@@ -11,6 +13,7 @@ const TodoList = ({
   text,
 }) => {
   return (
+
     <div className={style.todoList}>
       {!todos.length && <h2>Додай задачу</h2>}
       <TransitionGroup className="todo-list">
@@ -23,7 +26,7 @@ const TodoList = ({
           >
             <div ref={todo.nodeRef}>
               <Todo
-                // key={todo.id}
+                color={randomColor()}
                 className="remove-btn"
                 todo={todo}
                 deleteTodoHandler={deleteTodoHandler}

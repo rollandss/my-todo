@@ -1,16 +1,11 @@
 import style from './Todo.module.css'
 import { RiDeleteBin2Line } from 'react-icons/ri'
 import { FaCheck } from 'react-icons/fa'
-import randomColor from 'randomcolor'
-import { useState } from 'react'
 
-const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, editTodo }) => {
-  let color = randomColor()
-  const [styleColor] = useState(color)
-
+const Todo = ({ todo, deleteTodoHandler, togleTodoHandler, color }) => {
   return (
     <div
-      style={{ backgroundColor: styleColor }}
+      style={{ backgroundColor: color }}
       className={`${style.todo} ${todo.isCompleted ? style.completedTodo : ''}`}
     >
       <div className={style.todoText}>{todo.text}</div>

@@ -4,7 +4,6 @@
   align-items: center;
 }
 .todoFormContainer input {
-  /* height: 1.3em; */
   max-width: 70%;
   border-radius: 5px;
   border: none;
@@ -17,7 +16,6 @@
 .todoFormContainer input:hover {
   background-color: white;
   box-shadow: gray 0px 3px 3px;
-  /* height: 1.3em; */
 }
 
 input::placeholder {
@@ -28,7 +26,6 @@ input::placeholder {
 
 button {
   text-shadow: gray 0px 2px 5px;
-  /* padding: 8px; */
   margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
