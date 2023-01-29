@@ -10,8 +10,7 @@ const TodoList = ({
   todos,
   deleteTodoHandler,
   togleTodoHandler,
-  editTodo,
-  text,
+ 
 }) => {
   
  
